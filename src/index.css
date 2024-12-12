@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.sidebar{
+  color: #fff;
+}
+
+.menu-bar {
+  max-height: calc(100vh - 64px); /* Adjust as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* WebKit Browsers */
+.menu-bar::-webkit-scrollbar {
+  width: 4px !important; /* Width of the vertical scrollbar */
+  height: 4px !important; /* Height of the horizontal scrollbar */
+}
+
+.menu-bar::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar color */
+   border-radius: 2px; /* Rounded edges */
+}
+
+.menu-bar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color on hover */
+}
+
+.menu-bar::-webkit-scrollbar-track {
+  background: rgb(0, 21, 41, 1); /* Background of the scrollbar track */
+  border-radius: 4px;
+}
+
+/* Firefox */
+.menu-bar {
+  scrollbar-width: thin; /* Make scrollbar thinner */
+  scrollbar-color:blue /* Scrollbar thumb and track colors */
+}
+
+/* Edge/IE (fallback styles) */
+.menu-bar {
+  scrollbar-width: auto;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  height: 60px; /* Default sider height */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  margin-right: 5px;
+}
+.logo-toggle{
+  display: flex;
+  border-bottom: 1px solid #333;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.logo.collapsed img {
+  display: none;
+}
+
+.toggle-theme-btn{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.toggle{
+  margin-left: 15px;
+  color: #fff;
+}
+
+.recent-item{
+  border: 0.5px solid #333;
+  padding-left: 20px;
+}
+
