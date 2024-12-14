@@ -1,11 +1,172 @@
-.ant-layout-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .ant-btn-primary {
-    background-color: #1890ff;
-    border-color: #1890ff;
-  }
-  
+.main-header {
+  padding-bottom: .3em;
+  position: relative;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+.main-header svg{
+  font-size: 17px;
+}
+
+.page-title {
+  font-size: 1.95rem;
+  font-weight: bold;
+  margin-top: .5rem;
+  color: #4C4C4C;
+}
+
+.page-title {
+  display: inline-block;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.pageTool {
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  top: 1.3rem;
+}
+
+.page-icon {
+  border-radius: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.25rem;
+  border: 0;
+  vertical-align: middle;
+  padding-top: .4rem;
+  box-shadow: none;
+  color: #4c4c4c;
+  background: none #f9f9f9;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.view-switcher button {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.view-switcher button.active {
+  background-color: orange;
+  color: #fff;
+}
+
+.g-5 {
+  gap: 5px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+/* .view-switcher button:hover {
+  background-color: #f0f0f0;
+} */
+
+.main-content {
+  padding: .8em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.sectionTitleContainer {
+  padding: .5em 0;
+}
+
+.sectionTitleContainer .sectionTitle {
+  margin-left: .5rem;
+  padding-right: .5rem;
+  font-size: 1.5rem;
+  color: #4C4C4C;
+  font-weight: 500;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.sectionTitleContainer .button1 {
+  background-position: 50% 50%;
+  border: 1px solid #DDD;
+  width: 12.4em;
+  height: 30px;
+  padding: 8px 25px 8px 8px;
+  color: #4C4C4C;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+
+}
+
+.sectionTitleContainer .button1 span {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  margin-left: 9px;
+  fill: #4C4C4C;
+}
+
+.sectionTitleContainer .button2 {
+  width: auto;
+  height: 30px;
+  padding: .38rem 10px .47rem 10px;
+  color: #4c4c4c;
+  background: none #f9f9f9;
+  border-radius: 2px;
+  border: 1px solid #DDD;
+  text-transform: none;
+  margin-left: 5px;
+}
+
+.sectionTitleContainer .button3 {
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1) !important;
+  border-color: #ef5b18;
+  color: #FFF;
+  padding-right: 10px !important;
+  padding-left: 20px !important;
+  padding-top: .38rem;
+  padding-bottom: .47rem;
+  background: none #ff5f01;
+}
+
+
+.sectionTitleContainer .button3 span {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  position: absolute;
+  margin-right: 9px;
+  left: 7px;
+  top: 7px;
+  fill: #fff;
+}
